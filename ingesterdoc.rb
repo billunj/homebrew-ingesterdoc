@@ -2,14 +2,14 @@
 # frozen_string_literal: true
 
 # top-level class comment
-class IngesterLambdaGui < Formula
-  desc "Ingester Lambda CLI"
+class IngesterLambdaDoc < Formula
+  desc "Ingester Lambda Doc"
   homepage "https://bitbucket.org/infomaker/"
-  url  "https://s3-eu-west-1.amazonaws.com/cca-dev-bill-temp/ingester-doc/ingester-doc-2020-10-12T132617-v0.0.1.tar.gz"
-  sha256 "949138482cc3aa6363220efce9a9e76b26057b7ccef9cb60219659ce62b9abbe"
+  url  "https://s3-eu-west-1.amazonaws.com/cca-dev-bill-temp/ingester-doc/ingester-doc-2021-01-04T181604-adf84ca.tar.gz"
+  sha256 "e864150f789f9d057563e36899a15057988517c7da0163cade9dde7d41909e9f"
 
   def install
-    bin.install "ingester-cli"
+    bin.install "ingester-doc"
   end
 
   test do
@@ -22,6 +22,6 @@ class IngesterLambdaGui < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "#{bin}/ingester-cli"
+    system "#{bin}/ingester-doc"
   end
 end
